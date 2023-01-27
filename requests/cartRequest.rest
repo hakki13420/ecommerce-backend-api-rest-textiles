@@ -1,0 +1,45 @@
+
+GET http://localhost:5000/api/carts
+
+###
+POST http://localhost:5000/api/carts
+Content-Type: application/json
+
+{
+    "userId":"11111",
+    "products":[
+        {
+            "productId":"444",
+            "quantity":34
+        },
+        {
+            "productId":"66",
+            "quantity":37
+        },
+        {
+            "productId":"55",
+            "quantity":88
+        }
+    ]
+}
+
+###
+GET http://localhost:5000/api/carts/11111
+
+
+###
+DELETE http://localhost:5000/api/carts/11111
+
+###
+PUT http://localhost:5000/api/carts/11111
+Content-Type: application/json
+
+{
+    "userId":"11111Update",
+    "products":[
+        {
+            "productId":"444update",
+            "quantity":444
+        }
+    ]
+}

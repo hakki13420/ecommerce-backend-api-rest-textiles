@@ -1,0 +1,36 @@
+GEt http://localhost:5000/api/users?admin
+
+
+
+###
+POST http://localhost:5000/api/users
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzY2RiODc0MDY0Mzg0YTNkYTg4Mzg4OSIsIm5hbWUiOiJoYWtraSByYWJhaCIsImVtYWlsIjoicmFiYWhAZ21haWwuY29tIiwiaWF0IjoxNjc0NDk2Mzk4fQ.0kCxs3Jf1MFvBRqMT3JRh_YMNxTu11MNiQUuuVsqtU0
+
+
+{
+    "name":"soufiane1",
+    "email":"soufiane1@hakki.com",
+    "password":"hakki1"
+}
+
+###
+DELETE http://localhost:5000/api/users/63cb3eaf1fc168873406da3c
+
+
+###
+GET http://localhost:5000/api/users/find/63cdb874064384a3da883889
+
+
+###
+PUT http://localhost:5000/api/users/63cbdf4a222f0fef8be5ab33
+Content-Type: application/json
+
+{
+    "name":"didda",
+    "email":"didda@didda.com",
+    "password":"didda"
+}
+
+###
+GET http://localhost:5000/api/users/stat

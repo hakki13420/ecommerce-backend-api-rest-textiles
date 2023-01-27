@@ -1,0 +1,34 @@
+
+GET http://localhost:5000/api/products
+
+
+###
+POST http://localhost:5000/api/products
+Content-Type: application/json
+
+{
+    "title":"title of product",
+    "description":"decsription of this product",
+    "color":"red",
+    "size":"XL",
+    "price":300    
+}
+
+###
+GET http://localhost:5000/api/products/63d03dbf025c8f3243cdf863
+
+###
+DELETE http://localhost:5000/api/products/63d03dbf025c8f3243cdf863
+
+###
+PUT http://localhost:5000/api/products/63d03dbf025c8f3243cdf863
+Content-Type: application/json
+
+{
+    "title":"title of product upfdated",
+    "description":"description of product upfdated",
+    "color":"green",
+    "size":"XXL",
+    "price":89,
+    "qte":100
+}

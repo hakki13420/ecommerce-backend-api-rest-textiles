@@ -1,0 +1,27 @@
+
+GET http://localhost:5000/categories
+
+###
+POST http://localhost:5000/categories
+Content-Type: application/json
+
+{
+    "title":"shoes",
+    "description":"shoes description"    
+}
+
+###
+GEt http://localhost:5000/categories/63cdc154866583386c5ffc68
+
+###
+DELETE http://localhost:5000/categories/8
+
+
+###
+PUT http://localhost:5000/categories/63cdc154866583386c5ffc68
+Content-Type: application/json
+
+{
+    "title":"shoes updates",
+    "description":"shoes description updated"        
+}

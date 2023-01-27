@@ -1,0 +1,52 @@
+
+GET http://localhost:5000/api/orders
+
+###
+POST http://localhost:5000/api/orders
+Content-Type: application/json
+
+{
+    "userId":"22",
+    "products":[
+        {
+            "productId":"444",
+            "quantity":34
+        },
+        {
+            "productId":"66",
+            "quantity":37
+        },
+        {
+            "productId":"55",
+            "quantity":88
+        }
+    ],
+    "amount":233,
+    "adresse":"souahlia tounane"
+}
+
+###
+GET http://localhost:5000/api/orders/find/11111
+
+
+###
+DELETE http://localhost:5000/api/orders/11111
+
+###
+PUT http://localhost:5000/api/orders/11111
+Content-Type: application/json
+
+{
+    "userId":"11111Update",
+    "products":[
+        {
+            "productId":"444update",
+            "quantity":444
+        }
+    ],
+    "amount":55555,
+    "adresse":"ghazaouet"
+}
+
+###
+GEt http://localhost:5000/api/orders/income
